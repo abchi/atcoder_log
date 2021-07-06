@@ -1,9 +1,3 @@
-a, b = gets.split.map(&:to_f)
+a, b = gets.split.map(&:to_i)
 
-result = if (b / a).ceil <= 6 && a <= b
-           'Yes'
-         else
-           'No'
-         end
-
-puts result
+puts (1*a..6*a).include?(b) ? 'Yes' : 'No'
