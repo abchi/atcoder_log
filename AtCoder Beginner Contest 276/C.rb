@@ -2,7 +2,7 @@ n = gets.to_i
 p = gets.split.map(&:to_i)
 
 class Array
-  def next_permutation!
+  def prev_permutation!
     return nil if self.empty?
 
     prev = self.last
@@ -21,4 +21,4 @@ class Array
   end
 end
 
-puts p.next_permutation!.join(' ')
+puts p.prev_permutation!.join(' ')
